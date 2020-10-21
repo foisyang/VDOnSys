@@ -12,9 +12,9 @@ public:
     HostAddress(int sin_family, const char *ip, unsigned short port);
     ~HostAddress();
     void SetIp(const char *ip);
-    const char *GetIp();
+    char *GetIp() const;
     void SetPort(unsigned short port);
-    const unsigned short GetPort();
+    unsigned short GetPort() const;
     struct sockaddr_in *GetAddress();
     int GetLength();
 };

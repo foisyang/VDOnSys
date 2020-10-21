@@ -26,7 +26,7 @@ void HostAddress::SetIp(const char *ip)
     this->m_addr.sin_addr.s_addr = inet_addr(ip);
 }
 
-const char *HostAddress::GetIp()
+char *HostAddress::GetIp() const
 {
     return inet_ntoa(this->m_addr.sin_addr);
 }
@@ -36,7 +36,7 @@ void HostAddress::SetPort(const unsigned short port)
     this->m_addr.sin_port = htons(port);
 }
 
-const unsigned short HostAddress::GetPort()
+unsigned short HostAddress::GetPort() const
 {
     return ntohs(this->m_addr.sin_port);
 }
