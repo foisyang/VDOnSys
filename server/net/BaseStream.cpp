@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <stdio.h>
 
-BaseStream::BaseStream(/* args */)
+BaseStream::BaseStream(/* args */): m_fd(0)
 {
 }
 
