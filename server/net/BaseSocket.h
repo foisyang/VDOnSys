@@ -17,8 +17,8 @@ public:
 	int Close();
 protected:
 	void Create(int sin_farmly, int type, int protocl);
-	int m_fd;
-    int m_sin_farmly;
-    BaseStream *m_stream;
+	int                 m_fd;
+    int                 m_sin_farmly;
+    BaseStream*         m_stream;
 };
 

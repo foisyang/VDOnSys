@@ -4,9 +4,6 @@
 
 class HostAddress
 {
-private:
-    struct sockaddr_in m_addr;
-    int m_length;
 public:
     HostAddress();
     HostAddress(int sin_family, const char *ip, unsigned short port);
@@ -17,4 +14,7 @@ public:
     unsigned short GetPort() const;
     struct sockaddr_in *GetAddress();
     int GetLength();
+private:
+    int                     m_length;
+    struct sockaddr_in      m_addr;
 };

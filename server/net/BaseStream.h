@@ -3,7 +3,7 @@
 class BaseStream
 {
 private:
-    int m_fd;
+    int             m_fd;
 public:
     BaseStream();
     BaseStream(int fd);

@@ -1,8 +1,7 @@
 #pragma once
 
 #include "BaseSocket.h"
-
-    class UDPSocket : public BaseSocket
+class UDPSocket : public BaseSocket
 {
 public:
 	UDPSocket();
