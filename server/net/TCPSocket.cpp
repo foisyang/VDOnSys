@@ -28,7 +28,7 @@ TCPSocket & TCPSocket::operator=(const TCPSocket &other)
 {
 
 }
-HostAddress TCPSocket::GetRemoteAddr() const
+HostAddress TCPSocket::GetRemoteAddr() const    
 {
     return this->m_remote_addr;
 }
